@@ -70,8 +70,7 @@ Frontend:
 
 ### Phase 1
 
-Hero Section
-Navigation
+Hero + Navigation
 
 ### Phase 2
 
@@ -79,59 +78,46 @@ Why This Property
 
 ### Phase 3
 
-Retail
-Luxury
+Retail + Luxury
 
 ### Phase 4
 
-Dining
-Entertainment
+Dining + Entertainment
 
 ### Phase 5
 
-Events
-Sponsorship
-Leasing
+Events + Sponsorship + Leasing
 
 ### Phase 6
 
-Performance
-Polish
-Deployment
+Performance + Polish + Deployment
 
 ---
 
-## Current Status
+## Design Rules
 
-Completed:
-
-* Next.js Setup
-* TypeScript Setup
-* Tailwind Setup
-* Folder Structure
-
-Current Task:
-Hero + Navigation
-
-Progress:
-10%
+* Luxury cinematic design
+* Apple-level polish
+* Tesla-style simplicity
+* Dubai Mall storytelling
+* Video-first experience
+* High performance
+* Modular architecture
 
 ---
 
-## AI Agent Instructions
+## Token Optimization
 
-Before coding:
+* Read minimum files required.
+* Do not analyze completed work again.
+* Work only on current task.
 
-1. Read PROJECT.md
-2. Determine current task
-3. Continue only current task
+---
 
-After coding:
+## AI Workflow
 
-1. Update Current Status
-2. Update Progress
-3. Record modified files
+Project scope and roadmap live here.
 
-Never redesign completed sections.
+Current progress lives in STATUS.md.
 
-Maintain luxury cinematic design language.
+History lives in CHANGELOG.md.
