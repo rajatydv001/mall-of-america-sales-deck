@@ -3,7 +3,7 @@
 Progress: 100%
 
 Current Task:
-None — Lighthouse audit fixes complete: favicon, contrast, unused asset cleanup.
+None — Hero video implemented: generated 1920×1080 cinematic loop from hero-bg.jpg with blurred background fill and slow zoom.
 
 Completed:
 
@@ -25,18 +25,8 @@ Modified Files:
 
 * STATUS.md
 * CHANGELOG.md
-* frontend/src/app/icon.svg
-* frontend/src/sections/retail-luxury/RetailLuxury.tsx
-* frontend/src/sections/why-this-property/WhyThisProperty.tsx
-* frontend/src/sections/dining-entertainment/DiningEntertainment.tsx
-* frontend/src/sections/events-sponsorship/EventsSponsorship.tsx
-* frontend/public/videos/hero.mp4 (deleted)
-* frontend/public/images/entertainment/nickelodeon-universe-birthday.jpg (deleted)
-* frontend/public/images/entertainment/rainbow-pattern.png (deleted)
-* frontend/public/images/entertainment/sea-life-jellyfish.jpg (deleted)
-* frontend/public/images/entertainment/sea-life-learning.jpg (deleted)
-* frontend/public/images/entertainment/sea-life-map.jpg (deleted)
-* frontend/public/images/entertainment/sea-life-party-room.jpg (deleted)
+* frontend/src/sections/hero/Hero.tsx
+* frontend/public/videos/hero.mp4
 
 Last Updated:
 2026-06-04

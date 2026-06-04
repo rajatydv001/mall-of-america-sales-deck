@@ -308,17 +308,58 @@ Hero video was 848×480 SD H.264 Baseline — well below premium cinematic stand
 
 ---
 
-## Auto Changelog Rules
+## 2026-06-04 (Hero Video — Visibility Fix)
 
-The AI agent must append a new entry after every completed task.
+### Completed
 
-Format:
+* Stripped audio track from hero video (was AAC stereo, causing autoplay issues in some browsers)
+* Reduced overlay opacity stack:
+  * Warm radial gradient: fully opaque → rgba with 15-60% opacity
+  * Linear dark gradient: 45-90% → 25-70% opacity
+  * Radial vignette: 60-95% → 40-75% opacity
+* Video now clearly visible through overlays while maintaining text readability
+* Build passes cleanly
 
-Date:
-Task Completed:
-Files Modified:
-Summary:
+### Files Modified
 
-Never overwrite previous entries.
+* STATUS.md
+* CHANGELOG.md
+* frontend/src/sections/hero/Hero.tsx
+* frontend/public/videos/hero.mp4
 
-Always append.
+---
+
+## 2026-06-04 (Hero Video — Replaced with Premium Asset)
+
+### Completed
+
+* Replaced generated placeholder with premium 4.6MB hero video asset
+* Build passes cleanly
+
+### Files Modified
+
+* STATUS.md
+* CHANGELOG.md
+* frontend/public/videos/hero.mp4
+
+---
+
+## 2026-06-04 (Hero Video Implementation)
+
+### Completed
+
+* Replaced static hero background image (`/images/hero-bg.jpg`) with a `<video>` element
+* Generated 1920×1080 cinematic video from hero-bg.jpg using ffmpeg (blurred background fill + slow zoom)
+* Video autoplays, muted, loops, plays inline; poster fallback to hero-bg.jpg
+* All existing overlay layers (gradients, grain, shimmer, noise) preserved on top of video
+* GSAP parallax on video layer (yPercent: 18, scale: 1.08) unchanged
+* Production build passes cleanly
+
+### Files Modified
+
+* STATUS.md
+* CHANGELOG.md
+* frontend/src/sections/hero/Hero.tsx
+* frontend/public/videos/hero.mp4
+
+---

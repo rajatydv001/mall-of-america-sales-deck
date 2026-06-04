@@ -198,24 +198,30 @@ export default function Hero() {
         aria-hidden
         className="absolute inset-0 -z-30 will-change-transform"
       >
-        <div
-          className="absolute inset-0 -z-20 bg-cover bg-center"
-          style={{ backgroundImage: "url(/images/hero-bg.jpg)" }}
-        />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,#1a1611_0%,#050505_55%,#000_100%)]" />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/images/hero-bg.jpg"
+          className="absolute inset-0 -z-20 h-full w-full object-cover"
+        >
+          <source src="/videos/hero.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(26,22,17,0.08)_0%,rgba(5,5,5,0.15)_55%,rgba(0,0,0,0.30)_100%)]" />
         <div className="absolute inset-0 luxury-grain" />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.60) 40%, rgba(0,0,0,0.90) 100%)",
+              "linear-gradient(180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.20) 40%, rgba(0,0,0,0.40) 100%)",
           }}
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.60) 60%, rgba(0,0,0,0.95) 100%)",
+              "radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.20) 60%, rgba(0,0,0,0.40) 100%)",
           }}
         />
         <div
