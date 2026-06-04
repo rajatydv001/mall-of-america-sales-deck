@@ -62,7 +62,7 @@ function StatCard({ value, suffix, prefix, label, caption, decimals = 0 }: StatC
 
   return (
     <div className="group relative flex flex-col gap-2 border-t border-white/10 pt-5 sm:gap-3 sm:pt-7">
-      <span className="text-[10px] uppercase tracking-[0.32em] text-white/45 sm:text-[11px]">
+      <span className="text-[10px] uppercase tracking-[0.32em] text-white/60 sm:text-[11px]">
         {label}
       </span>
       <div className="flex items-baseline gap-1">
@@ -81,7 +81,7 @@ function StatCard({ value, suffix, prefix, label, caption, decimals = 0 }: StatC
           {suffix}
         </span>
       </div>
-      <p className="max-w-[28ch] text-[11px] leading-relaxed text-white/55 sm:text-xs">
+      <p className="max-w-[28ch] text-[11px] leading-relaxed text-white/60 sm:text-xs">
         {caption}
       </p>
     </div>
@@ -207,7 +207,7 @@ function LocationMap() {
           x="60"
           y="105"
           textAnchor="middle"
-          className="fill-white/45"
+          className="fill-white/50"
           style={{ fontSize: "8px", letterSpacing: "0.18em", textTransform: "uppercase" }}
         >
           Intl. Airport
@@ -246,7 +246,7 @@ function LocationMap() {
           x="420"
           y="385"
           textAnchor="middle"
-          className="fill-white/45"
+          className="fill-white/50"
           style={{ fontSize: "8px", letterSpacing: "0.18em", textTransform: "uppercase" }}
         >
           Bloomington, MN
@@ -281,7 +281,7 @@ function TenantCard({
         aria-hidden
       />
       <div className="relative flex items-center justify-between">
-        <span className="text-[10px] uppercase tracking-[0.32em] text-white/45 sm:text-[11px]">
+        <span className="text-[10px] uppercase tracking-[0.32em] text-white/60 sm:text-[11px]">
           {pillar.id}
         </span>
         <span className="font-display text-2xl font-light text-accent-soft sm:text-3xl">
@@ -293,7 +293,7 @@ function TenantCard({
         <h3 className="font-display text-3xl font-light leading-[1.05] tracking-tight text-white sm:text-4xl">
           {pillar.title}
         </h3>
-        <p className="mt-2 text-[11px] uppercase tracking-[0.22em] text-white/55 sm:text-xs">
+        <p className="mt-2 text-[11px] uppercase tracking-[0.22em] text-white/60 sm:text-xs">
           {pillar.tagline}
         </p>
       </div>
@@ -334,7 +334,7 @@ function PressMarquee() {
         {items.map((logo, i) => (
           <span
             key={`${logo.name}-${i}`}
-            className="whitespace-nowrap text-sm font-medium uppercase tracking-[0.28em] text-white/45 transition-colors duration-500 hover:text-white/85 sm:text-base"
+            className="whitespace-nowrap text-sm font-medium uppercase tracking-[0.28em] text-white/60 transition-colors duration-500 hover:text-white/85 sm:text-base"
           >
             {logo.mark}
           </span>
@@ -414,11 +414,11 @@ function AudienceBar({
 
   return (
     <div className="flex flex-col gap-1.5">
-      <div className="flex items-baseline justify-between text-[11px] uppercase tracking-[0.22em] text-white/55 sm:text-xs">
+      <div className="flex items-baseline justify-between text-[11px] uppercase tracking-[0.22em] text-white/60 sm:text-xs">
         <span>{band.label}</span>
         <span className="font-display text-base text-white sm:text-lg">
           {band.value}
-          <span className="text-xs text-white/55">%</span>
+          <span className="text-xs text-white/60">%</span>
         </span>
       </div>
       <div className="relative h-1.5 w-full overflow-hidden rounded-full bg-white/[0.06]">
@@ -565,7 +565,7 @@ function AudienceDonut() {
           <div className="font-display text-3xl font-light text-white sm:text-4xl">
             40M+
           </div>
-          <div className="mt-1 text-[9px] uppercase tracking-[0.28em] text-white/55 sm:text-[10px]">
+          <div className="mt-1 text-[9px] uppercase tracking-[0.28em] text-white/60 sm:text-[10px]">
             Annual
           </div>
         </div>
@@ -587,10 +587,10 @@ function AudienceDonut() {
                 </span>
                 <span className="font-display text-sm text-white sm:text-base">
                   {seg.value}
-                  <span className="text-[10px] text-white/55">%</span>
+                  <span className="text-[10px] text-white/60">%</span>
                 </span>
               </div>
-              <p className="mt-0.5 text-[10px] leading-relaxed text-white/45 sm:text-[11px]">
+              <p className="mt-0.5 text-[10px] leading-relaxed text-white/60 sm:text-[11px]">
                 {seg.caption}
               </p>
             </div>
@@ -748,7 +748,7 @@ export default function WhyThisProperty() {
                     <span className="text-[10px] uppercase tracking-[0.28em] text-white/65 sm:text-[11px]">
                       {fact.label}
                     </span>
-                    <span className="mt-0.5 text-[11px] leading-relaxed text-white/45 sm:text-xs">
+                    <span className="mt-0.5 text-[11px] leading-relaxed text-white/60 sm:text-xs">
                       {fact.description}
                     </span>
                   </div>
@@ -826,7 +826,7 @@ export default function WhyThisProperty() {
               data-reveal
               className="rounded-2xl border border-white/8 bg-white/[0.02] p-6 sm:p-7"
             >
-              <h4 className="mb-5 text-[10px] uppercase tracking-[0.32em] text-white/55 sm:text-[11px]">
+              <h4 className="mb-5 text-[10px] uppercase tracking-[0.32em] text-white/60 sm:text-[11px]">
                 Age Distribution
               </h4>
               <div className="flex flex-col gap-3">
@@ -839,7 +839,7 @@ export default function WhyThisProperty() {
               data-reveal
               className="rounded-2xl border border-white/8 bg-white/[0.02] p-6 sm:p-7"
             >
-              <h4 className="mb-5 text-[10px] uppercase tracking-[0.32em] text-white/55 sm:text-[11px]">
+              <h4 className="mb-5 text-[10px] uppercase tracking-[0.32em] text-white/60 sm:text-[11px]">
                 Household Income
               </h4>
               <div className="flex flex-col gap-3">
@@ -856,7 +856,7 @@ export default function WhyThisProperty() {
               data-reveal
               className="rounded-2xl border border-white/8 bg-white/[0.02] p-6 sm:p-7"
             >
-              <h4 className="mb-5 text-[10px] uppercase tracking-[0.32em] text-white/55 sm:text-[11px]">
+              <h4 className="mb-5 text-[10px] uppercase tracking-[0.32em] text-white/60 sm:text-[11px]">
                 Visitor Origin
               </h4>
               <AudienceDonut />

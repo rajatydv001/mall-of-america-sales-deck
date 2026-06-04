@@ -1,16 +1,22 @@
 # AI RULES
 
-Read only:
+## Read Order
 
-1. PROJECT.md
-2. STATUS.md
+1. STATUS.md
+2. PROJECT.md (only if needed)
 3. AI_RULES.md
 
 Read CHANGELOG.md only when historical context is required.
 
-Perform ONLY the Current Task.
+---
 
-Do not redesign completed sections.
+## Working Rules
+
+* Perform ONLY the Current Task.
+* Do not redesign completed sections.
+* Do not revisit completed work.
+* Do not scan the entire repository.
+* Read only files related to the current task.
 
 Maintain:
 
@@ -23,21 +29,42 @@ Maintain:
 
 ## Mandatory After Completion
 
-1. Update STATUS.md automatically
-2. Append CHANGELOG.md automatically
+1. Update STATUS.md
+2. Append CHANGELOG.md
 3. Update Progress %
 4. Set next Current Task
 5. Record modified files
-
-Never ask the user to manually update trackers.
 
 The AI agent owns project tracking.
 
 ---
 
-## Response Rules
+## Token Saving Mode
 
-* Keep responses concise.
-* Avoid re-analyzing completed work.
-* Do not scan the entire repository unless required.
-* Work only on the current task.
+Default behavior:
+
+* Read STATUS.md first.
+* Read PROJECT.md only if required.
+* Never analyze the whole codebase.
+* Never explain implementation unless asked.
+* Never generate long reports.
+
+---
+
+## Response Format
+
+Return only:
+
+Files Changed:
+
+* ...
+
+Work Completed:
+
+* ...
+
+Next Task:
+
+* ...
+
+Keep responses under 100 words whenever possible.

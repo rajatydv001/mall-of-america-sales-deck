@@ -10,7 +10,6 @@ import {
   SPONSORSHIP_INVENTORY,
   LEASING_OPPORTUNITIES,
   PARTNERSHIP_BENEFITS,
-  TESTIMONIAL,
   CONTACT_CTA,
 } from "@/data/events";
 
@@ -29,7 +28,7 @@ function EventSpaceCard({
       />
       <div className="relative flex items-start justify-between gap-4">
         <div className="flex flex-col gap-1">
-          <span className="text-[10px] uppercase tracking-[0.32em] text-white/45 sm:text-[11px]">
+          <span className="text-[10px] uppercase tracking-[0.32em] text-white/65 sm:text-[11px]">
             {space.type}
           </span>
           <h3 className="font-display text-3xl font-light leading-[1.05] tracking-tight text-white sm:text-4xl">
@@ -59,7 +58,7 @@ function SponsorshipCard({
         aria-hidden
       />
       <div className="relative flex items-center justify-between">
-        <span className="text-[10px] uppercase tracking-[0.32em] text-white/45 sm:text-[11px]">
+        <span className="text-[10px] uppercase tracking-[0.32em] text-white/65 sm:text-[11px]">
           Sponsor
         </span>
         <span className="text-[10px] uppercase tracking-[0.22em] text-accent-soft/70 sm:text-[11px]">
@@ -88,10 +87,10 @@ function LeasingCard({
         aria-hidden
       />
       <div className="relative flex items-center justify-between">
-        <span className="text-[10px] uppercase tracking-[0.32em] text-white/45 sm:text-[11px]">
+        <span className="text-[10px] uppercase tracking-[0.32em] text-white/65 sm:text-[11px]">
           {opp.available}
         </span>
-        <span className="text-[10px] uppercase tracking-[0.22em] text-white/55 sm:text-[11px]">
+        <span className="text-[10px] uppercase tracking-[0.22em] text-white/60 sm:text-[11px]">
           {opp.size}
         </span>
       </div>
@@ -112,7 +111,7 @@ function BenefitCard({
 }) {
   return (
     <div className="relative flex flex-col border-t border-white/10 pt-6 sm:pt-8">
-      <span className="text-[10px] uppercase tracking-[0.32em] text-white/45 sm:text-[11px]">
+      <span className="text-[10px] uppercase tracking-[0.32em] text-white/65 sm:text-[11px]">
         {item.label}
       </span>
       <p className="mt-2 font-display text-2xl font-light leading-[1.2] tracking-tight text-white sm:text-3xl">
@@ -165,7 +164,7 @@ function ContactCta() {
           className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-black/10 to-transparent transition-transform duration-700 group-hover:translate-x-full"
         />
       </a>
-      <p className="text-[11px] uppercase tracking-[0.32em] text-white/45 sm:text-xs">
+      <p className="text-[11px] uppercase tracking-[0.32em] text-white/60 sm:text-xs">
         Mall of America · 60 E Broadway · Bloomington, MN 55425
       </p>
     </div>
@@ -328,27 +327,6 @@ export default function EventsSponsorship() {
             {PARTNERSHIP_BENEFITS.map((benefit) => (
               <BenefitCard key={benefit.label} item={benefit} />
             ))}
-          </div>
-        </div>
-
-        <div
-          data-reveal
-          className="flex flex-col items-center gap-7 py-8 text-center sm:py-12"
-        >
-          <span className="font-display text-3xl text-accent-soft/60">✦</span>
-          <blockquote className="mx-auto max-w-4xl">
-            <p className="font-display text-balance text-2xl font-light italic leading-[1.2] tracking-tight text-white sm:text-3xl md:text-4xl lg:text-5xl">
-              &ldquo;{TESTIMONIAL.quote}&rdquo;
-            </p>
-          </blockquote>
-          <div className="flex flex-col items-center gap-2">
-            <div className="h-px w-12 bg-gradient-to-r from-transparent via-accent/80 to-transparent" />
-            <span className="text-[11px] uppercase tracking-[0.32em] text-white/65 sm:text-xs">
-              {TESTIMONIAL.attribution}
-            </span>
-            <span className="text-[10px] uppercase tracking-[0.28em] text-white/45 sm:text-[11px]">
-              {TESTIMONIAL.role}
-            </span>
           </div>
         </div>
 

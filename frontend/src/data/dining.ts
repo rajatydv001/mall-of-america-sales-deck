@@ -169,13 +169,6 @@ export const EVENT_FACTS = [
   },
 ] as const;
 
-export const TESTIMONIAL = {
-  quote:
-    "Mall of America isn't a mall — it's a destination within a destination. We see conversion rates from our joint F&B and activation partnerships that we can't replicate anywhere else.",
-  attribution: "National Entertainment Brand",
-  role: "Director of Partnerships",
-};
-
 export const SECTION_CTA = {
   eyebrow: "Continue the Tour",
   headline: "Events + Sponsorship + Leasing",

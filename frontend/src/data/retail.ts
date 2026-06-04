@@ -222,13 +222,6 @@ export const PERFORMANCE = [
   },
 ];
 
-export const TESTIMONIAL = {
-  quote:
-    "Mall of America gives us something no other U.S. property can — a captive, year-round audience of 40 million that returns to the destination with the same intent as our best flagship streets.",
-  attribution: "Global Flagship Brand",
-  role: "VP, Real Estate Strategy",
-};
-
 export const SECTION_CTA = {
   eyebrow: "Continue the Tour",
   headline: "Dining + Entertainment",

@@ -364,7 +364,7 @@ export default function Hero() {
           </a>
           <a
             data-cta
-            href="#media-kit"
+            href="#contact"
             className="group inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/15 bg-white/[0.02] px-7 py-3.5 text-[12px] font-semibold uppercase tracking-[0.22em] text-white/85 transition-all duration-500 hover:border-white/30 hover:bg-white/[0.05] hover:text-white sm:w-auto"
           >
             <span>Download Media Kit</span>

@@ -112,17 +112,14 @@ export const PARTNERSHIP_BENEFITS = [
   },
 ] as const;
 
-export const TESTIMONIAL = {
-  quote:
-    "Mall of America treats brand partnerships the way we treat our customers: as intentional relationships, not lease transactions. The audience, the infrastructure, and the flexibility are unmatched anywhere in the United States.",
-  attribution: "Major U.S. Retail Brand",
-  role: "SVP, Real Estate & Development",
-};
-
 export const CONTACT_CTA = {
   eyebrow: "Start the Conversation",
   headline: "The Address That Defines the Category.",
   subhead:
     "One conversation can change the center of gravity for your brand. Let's talk about what's possible.",
   cta: { label: "Schedule a Private Briefing", href: "#contact" },
+  leasing: {
+    label: "Submit a Leasing Inquiry",
+    href: "mailto:leasing@mallofamerica.com",
+  },
 };

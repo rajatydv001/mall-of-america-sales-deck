@@ -12,7 +12,6 @@ import {
   DINING_ECOSYSTEM,
   DINING_AWARDS,
   EVENT_FACTS,
-  TESTIMONIAL,
   SECTION_CTA,
   type DiningType,
 } from "@/data/dining";
@@ -39,7 +38,7 @@ function AttractionCard({
       ) : null}
       <div className="relative flex items-start justify-between gap-4">
         <div className="flex flex-col gap-1">
-          <span className="text-[10px] uppercase tracking-[0.32em] text-white/45 sm:text-[11px]">
+          <span className="text-[10px] uppercase tracking-[0.32em] text-white/60 sm:text-[11px]">
             {attraction.category}
           </span>
           <h3 className="font-display text-3xl font-light leading-[1.05] tracking-tight text-white sm:text-4xl">
@@ -51,7 +50,7 @@ function AttractionCard({
             {attraction.stat}
           </span>
           <br />
-          <span className="text-[9px] uppercase tracking-[0.22em] text-white/45 sm:text-[10px]">
+          <span className="text-[9px] uppercase tracking-[0.22em] text-white/60 sm:text-[10px]">
             {attraction.statLabel}
           </span>
         </div>
@@ -78,7 +77,7 @@ function DiningCard({ type }: { type: DiningType }) {
         aria-hidden
       />
       <div className="relative flex items-center justify-between">
-        <span className="text-[10px] uppercase tracking-[0.32em] text-white/45 sm:text-[11px]">
+        <span className="text-[10px] uppercase tracking-[0.32em] text-white/60 sm:text-[11px]">
           {type.id}
         </span>
         <span className="font-display text-2xl font-light text-accent-soft sm:text-3xl">
@@ -90,7 +89,7 @@ function DiningCard({ type }: { type: DiningType }) {
         <h3 className="font-display text-3xl font-light leading-[1.05] tracking-tight text-white sm:text-4xl">
           {type.title}
         </h3>
-        <p className="mt-2 text-[11px] uppercase tracking-[0.22em] text-white/55 sm:text-xs">
+        <p className="mt-2 text-[11px] uppercase tracking-[0.22em] text-white/60 sm:text-xs">
           {type.tagline}
         </p>
       </div>
@@ -123,13 +122,13 @@ function MoreAttractionCard({
           aria-hidden
         />
       ) : null}
-      <span className="relative text-[10px] uppercase tracking-[0.28em] text-white/45 sm:text-[11px]">
+      <span className="relative text-[10px] uppercase tracking-[0.28em] text-white/65 transition-colors duration-500 group-hover:text-white/85 sm:text-[11px]">
         {attraction.category}
       </span>
       <h4 className="relative font-display text-xl font-light leading-[1.1] tracking-tight text-white sm:text-2xl">
         {attraction.name}
       </h4>
-      <p className="relative text-[11px] leading-relaxed text-white/55 sm:text-xs">
+      <p className="relative text-[11px] leading-relaxed text-white/60 transition-colors duration-500 group-hover:text-white/80 sm:text-xs">
         {attraction.tagline}
       </p>
     </article>
@@ -176,7 +175,7 @@ function EventStat({
 
   return (
     <div className="flex flex-col gap-2 border-t border-white/10 pt-5 sm:gap-3 sm:pt-7">
-      <span className="text-[10px] uppercase tracking-[0.32em] text-white/45 sm:text-[11px]">
+      <span className="text-[10px] uppercase tracking-[0.32em] text-white/60 sm:text-[11px]">
         {label}
       </span>
       <div className="flex items-baseline gap-1">
@@ -192,7 +191,7 @@ function EventStat({
           </span>
         ) : null}
       </div>
-      <p className="max-w-[28ch] text-[11px] leading-relaxed text-white/55 sm:text-xs">
+      <p className="max-w-[28ch] text-[11px] leading-relaxed text-white/60 sm:text-xs">
         {description}
       </p>
     </div>
@@ -446,7 +445,7 @@ export default function DiningEntertainment() {
               private dinner, then walk them to a ride launch — all within the
               same leasehold.
             </p>
-            <ul className="mt-2 flex flex-col gap-3 border-t border-white/8 pt-5 text-[11px] uppercase tracking-[0.28em] text-white/55 sm:text-xs">
+            <ul className="mt-2 flex flex-col gap-3 border-t border-white/8 pt-5 text-[11px] uppercase tracking-[0.28em] text-white/60 sm:text-xs">
               <li className="flex items-center gap-3">
                 <span className="font-display text-base text-white sm:text-lg">
                   Private Dinners
@@ -474,7 +473,7 @@ export default function DiningEntertainment() {
             data-reveal
             className="flex flex-col gap-5 rounded-2xl border border-white/8 bg-white/[0.02] p-6 sm:p-8 lg:col-span-5"
           >
-            <span className="text-[10px] uppercase tracking-[0.32em] text-white/55 sm:text-[11px]">
+            <span className="text-[10px] uppercase tracking-[0.32em] text-white/60 sm:text-[11px]">
               The Performance
             </span>
             <p className="text-sm leading-relaxed text-white/65 sm:text-base">
@@ -486,27 +485,6 @@ export default function DiningEntertainment() {
                 <EventStat key={stat.label} {...stat} />
               ))}
             </div>
-          </div>
-        </div>
-
-        <div
-          data-reveal
-          className="flex flex-col items-center gap-7 py-8 text-center sm:py-12"
-        >
-          <span className="font-display text-3xl text-accent-soft/60">✦</span>
-          <blockquote className="mx-auto max-w-4xl">
-            <p className="font-display text-balance text-2xl font-light italic leading-[1.2] tracking-tight text-white sm:text-3xl md:text-4xl lg:text-5xl">
-              &ldquo;{TESTIMONIAL.quote}&rdquo;
-            </p>
-          </blockquote>
-          <div className="flex flex-col items-center gap-2">
-            <div className="h-px w-12 bg-gradient-to-r from-transparent via-accent/80 to-transparent" />
-            <span className="text-[11px] uppercase tracking-[0.32em] text-white/65 sm:text-xs">
-              {TESTIMONIAL.attribution}
-            </span>
-            <span className="text-[10px] uppercase tracking-[0.28em] text-white/45 sm:text-[11px]">
-              {TESTIMONIAL.role}
-            </span>
           </div>
         </div>
 

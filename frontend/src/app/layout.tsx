@@ -41,6 +41,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${display.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <link rel="preload" href="/images/hero-bg.jpg" as="image" />
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
