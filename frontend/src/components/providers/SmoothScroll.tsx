@@ -3,6 +3,12 @@
 import { useEffect, useRef, type ReactNode } from "react";
 import Lenis from "lenis";
 
+let scrollToTarget: ((id: string) => void) | null = null;
+
+export function scrollToSection(id: string) {
+  scrollToTarget?.(id);
+}
+
 export default function SmoothScroll({ children }: { children: ReactNode }) {
   const lenisRef = useRef<Lenis | null>(null);
 
@@ -17,6 +23,11 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
 
     lenisRef.current = lenis;
 
+    scrollToTarget = (id: string) => {
+      const el = document.getElementById(id);
+      if (el) lenis.scrollTo(el, { offset: 0 });
+    };
+
     let rafId = 0;
     const raf = (time: number) => {
       lenis.raf(time);
@@ -28,6 +39,7 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
       cancelAnimationFrame(rafId);
       lenis.destroy();
       lenisRef.current = null;
+      scrollToTarget = null;
     };
   }, []);
 

@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, Cormorant_Garamond } from "next/font/google";
 import SmoothScroll from "@/components/providers/SmoothScroll";
+import ScrollProgress from "@/components/providers/ScrollProgress";
+import CommandPalette from "@/components/command/CommandPalette";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -42,7 +44,9 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <link rel="preload" href="/images/hero-bg.jpg" as="image" />
+        <ScrollProgress />
         <SmoothScroll>{children}</SmoothScroll>
+        <CommandPalette />
       </body>
     </html>
   );

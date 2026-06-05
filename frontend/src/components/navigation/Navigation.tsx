@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { togglePalette } from "@/components/command/CommandPalette";
 
 const NAV_LINKS = [
   { label: "Property", href: "#why-this-property" },
@@ -97,6 +98,22 @@ export default function Navigation() {
           </ul>
 
           <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={togglePalette}
+              className="inline-flex items-center gap-1.5 rounded-full border border-white/10 px-3 py-1.5 text-[11px] text-white/50 transition-colors hover:border-white/25 hover:text-white/80"
+              aria-label="Open command palette"
+            >
+              <svg className="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.35-4.35" />
+              </svg>
+              <span>Search</span>
+              <kbd className="rounded border border-white/10 bg-white/[0.04] px-1.5 py-0.5 text-[9px] font-mono text-white/30">
+                ⌘K
+              </kbd>
+            </button>
+
             <a
               href="#book"
               className="group relative hidden items-center gap-2 overflow-hidden rounded-full border border-accent/40 bg-gradient-to-br from-accent/20 to-accent/5 px-4 py-2 text-[12px] font-medium uppercase tracking-[0.18em] text-accent-soft transition-all duration-500 hover:border-accent/80 hover:from-accent/30 hover:to-accent/10 sm:inline-flex"

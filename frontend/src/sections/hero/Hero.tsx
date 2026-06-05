@@ -118,6 +118,9 @@ export default function Hero() {
               v: target,
               duration: 1.9,
               ease: "power2.out",
+              onStart: () => {
+                el.setAttribute("data-countup", "");
+              },
               onUpdate: () => {
                 el.textContent = Math.round(obj.v).toLocaleString();
               },
@@ -163,7 +166,7 @@ export default function Hero() {
       if (videoLayerRef.current) {
         gsap.to(videoLayerRef.current, {
           yPercent: 18,
-          scale: 1.08,
+          scale: 1.01,
           ease: "none",
           scrollTrigger: {
             trigger: sectionRef.current,
@@ -208,32 +211,24 @@ export default function Hero() {
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,rgba(26,22,17,0.08)_0%,rgba(5,5,5,0.15)_55%,rgba(0,0,0,0.30)_100%)]" />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse at 30% 20%, rgba(26,22,17,0.06) 0%, rgba(5,5,5,0.10) 40%, rgba(0,0,0,0.20) 100%)",
+          }}
+        />
         <div className="absolute inset-0 luxury-grain" />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.20) 40%, rgba(0,0,0,0.40) 100%)",
-          }}
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.20) 60%, rgba(0,0,0,0.40) 100%)",
-          }}
-        />
         <div
           ref={grainRef}
           className="absolute inset-0 noise-overlay will-change-transform"
         />
         <div
           aria-hidden
-          className="absolute inset-0 opacity-60"
+          className="absolute inset-0 opacity-25"
           style={{
             backgroundImage:
-              "linear-gradient(120deg, transparent 0%, transparent 40%, rgba(201,169,106,0.10) 50%, transparent 60%, transparent 100%)",
+              "linear-gradient(120deg, transparent 0%, transparent 40%, rgba(201,169,106,0.08) 50%, transparent 60%, transparent 100%)",
             backgroundSize: "300% 100%",
             animation: "hero-shimmer 14s linear infinite",
           }}

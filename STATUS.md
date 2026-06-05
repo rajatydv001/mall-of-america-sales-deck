@@ -28,6 +28,9 @@ Modified Files:
 * frontend/src/sections/hero/Hero.tsx
 * frontend/public/videos/hero.mp4
 
+Deployed:
+* https://frontend-wine-chi-26.vercel.app (Production)
+
 Last Updated:
 2026-06-04
 

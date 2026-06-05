@@ -308,6 +308,20 @@ Hero video was 848×480 SD H.264 Baseline — well below premium cinematic stand
 
 ---
 
+## 2026-06-04 (Deploy to Vercel Production)
+
+### Completed
+
+* Committed hero video visibility improvements
+* Deployed to Vercel production
+
+### Files Modified
+
+* STATUS.md
+* CHANGELOG.md
+
+---
+
 ## 2026-06-04 (Hero Video — Visibility Fix)
 
 ### Completed
