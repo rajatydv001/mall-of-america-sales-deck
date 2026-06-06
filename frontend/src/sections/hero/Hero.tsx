@@ -233,10 +233,15 @@ export default function Hero() {
           loop
           playsInline
           poster="/images/hero-bg.jpg"
-          className="absolute inset-0 -z-20 h-full w-full object-cover object-[50%_35%] md:object-center"
+          className="absolute inset-0 -z-20 hidden h-full w-full object-cover md:block"
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
+        <div
+          className="absolute inset-0 -z-20 block h-full w-full bg-cover bg-center md:hidden"
+          style={{ backgroundImage: "url(/images/hero-bg.jpg)" }}
+          aria-hidden
+        />
         <div
           className="absolute inset-0"
           style={{
