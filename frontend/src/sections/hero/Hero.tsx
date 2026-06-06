@@ -233,7 +233,7 @@ export default function Hero() {
           loop
           playsInline
           poster="/images/hero-bg.jpg"
-          className="absolute inset-0 -z-20 h-full w-full object-cover max-md:object-contain"
+          className="absolute inset-0 -z-20 h-full w-full object-cover max-md:inset-x-0 max-md:mx-auto max-md:top-1/2 max-md:-translate-y-1/2 max-md:h-auto max-md:w-full max-md:aspect-video"
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
