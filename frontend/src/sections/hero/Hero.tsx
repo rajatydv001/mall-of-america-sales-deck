@@ -219,7 +219,7 @@ export default function Hero() {
     <section
       ref={sectionRef}
       id="top"
-      className="relative isolate flex h-[100svh] min-h-[720px] w-full items-center justify-center overflow-hidden bg-black"
+      className="relative isolate flex h-[100svh] min-h-[720px] w-full items-center justify-center overflow-hidden bg-black max-md:min-h-[100svh]"
     >
       <div
         ref={videoLayerRef}
