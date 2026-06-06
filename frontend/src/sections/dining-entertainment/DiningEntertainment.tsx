@@ -31,7 +31,7 @@ function AttractionCard({
       />
       {attraction.image ? (
         <div
-          className="absolute inset-0 -z-10 bg-cover bg-center opacity-30 transition-opacity duration-700 group-hover:opacity-50"
+          className="absolute inset-0 -z-10 bg-cover bg-center opacity-55 transition-opacity duration-700 group-hover:opacity-75"
           style={{ backgroundImage: `url(${attraction.image})` }}
           aria-hidden
         />
@@ -117,7 +117,7 @@ function MoreAttractionCard({
     <article className="group relative flex flex-col gap-2 overflow-hidden rounded-xl border border-white/8 bg-white/[0.02] p-4 transition-all duration-500 hover:border-accent/30 hover:bg-white/[0.04] sm:p-5">
       {"image" in attraction && attraction.image ? (
         <div
-          className="absolute inset-0 -z-10 bg-cover bg-center opacity-0 transition-opacity duration-700 group-hover:opacity-30"
+          className="absolute inset-0 -z-10 bg-cover bg-center opacity-25 transition-opacity duration-700 group-hover:opacity-55"
           style={{ backgroundImage: `url(${attraction.image})` }}
           aria-hidden
         />
