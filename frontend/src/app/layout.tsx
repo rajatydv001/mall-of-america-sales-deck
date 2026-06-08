@@ -26,6 +26,34 @@ export const metadata: Metadata = {
   title: "Mall of America — Interactive Sales Deck",
   description:
     "A cinematic introduction to the world's most iconic retail and entertainment destination. Retail leasing, sponsorships, and event bookings.",
+  metadataBase: new URL("https://frontend-wine-chi-26.vercel.app"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Mall of America — Interactive Sales Deck",
+    description:
+      "A cinematic introduction to the world's most iconic retail and entertainment destination. Retail leasing, sponsorships, and event bookings.",
+    url: "https://frontend-wine-chi-26.vercel.app",
+    siteName: "Mall of America",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Mall of America — Interactive Sales Deck",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mall of America — Interactive Sales Deck",
+    description:
+      "A cinematic introduction to the world's most iconic retail and entertainment destination. Retail leasing, sponsorships, and event bookings.",
+    images: ["/images/og-image.jpg"],
+  },
 };
 
 export const viewport: Viewport = {

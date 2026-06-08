@@ -118,8 +118,4 @@ export const CONTACT_CTA = {
   subhead:
     "One conversation can change the center of gravity for your brand. Let's talk about what's possible.",
   cta: { label: "Schedule a Private Briefing", href: "#contact" },
-  leasing: {
-    label: "Submit a Leasing Inquiry",
-    href: "mailto:leasing@mallofamerica.com",
-  },
 };

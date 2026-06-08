@@ -110,6 +110,8 @@ export default function CommandPalette() {
     return () => document.removeEventListener("keydown", onTab);
   }, [open]);
 
+  const optionId = (i: number) => `cmd-option-${i}`;
+
   const navigate = (dir: "up" | "down") => {
     if (filtered.length === 0) return;
     setActiveIdx((prev) => {
@@ -138,8 +140,6 @@ export default function CommandPalette() {
       go(filtered[activeIdx].id);
     }
   };
-
-  const optionId = (i: number) => `cmd-option-${i}`;
 
   return (
     <AnimatePresence>
